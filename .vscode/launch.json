@@ -7,38 +7,6 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Cargo test",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--lib"
-                ]
-            },
-            "program": "${cargo:program}",
-            "args": []
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug executable 'Patika-MerkleTree-Assignment'",
-            "cargo": {
-                "args": [
-                    "build",
-                    "--bin=Patika-MerkleTree-Assignment",
-                    "--package=Patika-MerkleTree-Assignment"
-                ],
-                "filter": {
-                    "name": "Patika-MerkleTree-Assignment",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
             "name": "Debug unit tests in executable 'Patika-MerkleTree-Assignment'",
             "cargo": {
                 "args": [
